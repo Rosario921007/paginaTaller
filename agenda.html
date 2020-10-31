@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>agenda personal</title>
+<link rel="stylesheet"  href="css/index.css">
+
+<style>
+	 input[type="radio"] {
+    background-position: 0 -42px; width: 24px; height: 24px;
+     
+     color: #001F3F;
+}
+
+input[type="button"]{
+	color: #001F3F;
+ 
+}
+
+
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"]  {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    background:#000;
+    color: #001F3F;
+}
+
+
+</style>
+
+<script languaje="javascript">
+
+window.onload =function()
+{
+	var btn_radio = document.getElementById("btn-radio");
+	btn_radio.onclick =function(){
+		var input_radio = document.formulario.input_radio;
+		for (x = 0; x < input_radio.length; x++)
+		{
+			if(input_radio[x].checked)
+			{
+				alert(input_radio[x].value);
+			}
+		}
+	}
+
+	var btn_checkbox = document.getElementById("btn-checkbox");
+	btn_checkbox.onclick = function(){
+		if(document.formulario.input_checkbox.checked){
+			alert("A aceptado la compra");
+
+		}
+		else{
+			alert("debe de aceptar la compra");
+		}
+	}
+}
+
+</script>
+</head>
+<body bgcolor="F3F3F3">
+
+<h1 class="center-align titulo">COMPRAS</h1>
+
+
+      <br/> <img src="img/carrito.jpg" alt=""whidth="700" height="400" >
+        <br/>
+
+
+
+
+  <form class="desctablatitulo" method="post" name="formulario">
+Labial POM <input type="radio" name="input_radio" checked value="Labial POM"><br>
+
+Labial MC <input type="radio" name="input_radio" value="Labial MC"><br>
+Sombra POM <input type="radio" name="imput_radio" value="Sombra POM "><br>
+Sombra MC <input type="radio" name="input_radio" value="Sombra MC"><br>
+Base POM <input type="radio" name="input_radio" value="Base POM"><br>
+Base MC <input type="radio" name="input_radio" value="Base MC "><br>
+Brochas POM <input type="radio" name="input_radio" value="Brochas POM"><br>
+Brochas MC <input type="radio" name="input_radio" value="Brochas MC"><br>
+Barniz POM <input type="radio" name="input_radio" value="Barniz POM"><br>
+Barniz MC <input type="radio" name="input_radio" value="Barniz MC"><br><br><br>
+<button type="button" id="btn-radio"> la compra</button>
+
+
+comprar <input type="checkbox" name="input_checkbox"><br>
+<button type="button" id="btn-checkbox">seleccione la compra</button>
+</form>
+
+
+
+
+
+
+
+
+	
+<a href="index.html"><img src="img/boton1.png" width="130" height="60"></a>
+
+</body>
+</html>
