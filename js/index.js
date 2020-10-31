@@ -42,72 +42,13 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(hola,0);
         console.log(new Date().toLocaleString());
 
-        var fecha= new Date();
-        document.write(fecha);
-
+        
       
       
 
 
       
       }())
-
-
-
-
-
-
-window.onload =function()
-{
-	var btn_radio = document.getElementById("btn-radio");
-	btn_radio.onclick =function(){
-		var input_radio = document.formulario.input_radio;
-		for (x = 0; x < input_radio.length; x++)
-		{
-			if(input_radio[x].checked)
-			{
-				alert(input_radio[x].value);
-			}
-		}
-	}
-
-	var btn_checkbox = document.getElementById("btn-checkbox");
-	btn_checkbox.onclick = function(){
-		if(document.formulario.input_checkbox.checked){
-			alert("A aceptado la compra");
-
-		}
-		else{
-			alert("debe de aceptar la compra");
-		}
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -146,3 +87,5 @@ var contactos = new Array();
 
 
  
+
+
